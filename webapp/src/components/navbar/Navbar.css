@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cardo&family=Dancing+Script:wght@500&family=Kavoon&family=Klee+One:wght@600&family=Libre+Bodoni&family=Lobster+Two&family=Pacifico&family=Poppins:wght@300&display=swap');
+
+
+.navbar-toggler{
+    color: rgb(255 255 255);
+}
+.navbar-brand{
+    width:80px;
+    height: 40px;
+
+
+}
+.fisrt-span-logo{
+    font-family: 'Kavoon', cursive;
+    font-size: 15px;
+}
+.logo-span{
+    padding-left: 2px;
+    font-family: 'Kavoon', cursive;
+    font-size: 20px;
+    color: var(--main-color);
+  
+    
+}
+
+
+
+.navbar{
+    background-color: rgb(54, 54, 54) !important;
+    position: relative;
+position: fixed !important;    
+z-index: 10 !important;
+}
+.nav-link{
+    font-weight: 900 !important;
+
+}
+
+
+.nav-link:hover{
+color: var(--main-color) !important;
+border-bottom: 1px solid white;
+
+
+
+}
+
+
+
+
+
+ .active{
+color: var(--main-color) !important;
+}
+
+.shop-icon{cursor: pointer;}
+.orders-div{
+    background-color: rgb(29, 29, 29) !important;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 10% !important;
+    height: 500px !important;
+    }
+    .gishopping-quantity{
+        font-weight: bold;
+        font-size:12px;
+        color: white;
+        top: 12px;
+        right: 13px;
+        background-color: rgb(211, 36, 36);
+        height: 20px;
+        width: 20px !important;
+        border-radius: 50%;
+        text-align: center;
+    }

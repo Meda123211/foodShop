@@ -1,0 +1,12 @@
+ 
+
+
+.menu-container{
+    background-color: rgb(15, 15, 15);
+}
+.menu-text{
+    letter-spacing: 2px;
+    font-family: 'Kavoon', cursive;
+   color: rgb(241, 241, 241);
+   border-top :2px solid  var(--main-color) ;
+}

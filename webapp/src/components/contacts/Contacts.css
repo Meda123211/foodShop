@@ -1,0 +1,89 @@
+.contact-section{
+    height: 90vh;
+    background-color: rgb(15, 15, 15);
+}
+.input-div input{
+    height:40px ;
+    background-color:rgba(#fff,0,0,1);
+    border: none;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: #fff;
+     
+} 
+.log-inputs::placeholder{
+color: #fff;
+ padding-left: 10px;
+ opacity: 0.8;
+ font-size: 16px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-div input:focus{
+ outline: none;
+ color: #fff;    
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-radius:0% !important;
+}
+
+.log-in{
+    color:  var(--main-color) !important;
+    background-color: transparent !important;
+ border: 1px solid white !important;
+ font-size: 18px !important;
+ letter-spacing: 1.6px !important;
+font-weight: 600 !important;
+
+}
+.log-in:hover{
+    background-color: var(--main-color) !important;
+    border: 1px solid transparent !important;
+    color: var(--second-color) !important;
+    font-weight: bold !important;
+    
+
+}
+.row-contact{
+    background-color: rgb(24, 24, 24);
+    
+    width:60% !important;
+    height: 60%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in{
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .row-contact{
+       
+        width:75% !important; 
+
+     }
+  
+     .input-div{
+      width: 75% !important;
+     }
+     } 
+    @media only screen and (max-width: 768px) {
+       .row-contact{
+       
+          width:100% !important; 
+
+       }
+    
+       .input-div{
+        width: 100% !important;
+       }
+    
+     } 

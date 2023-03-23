@@ -1,0 +1,29 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cardo&family=Dancing+Script:wght@500&family=Klee+One:wght@600&family=Libre+Bodoni&family=Lobster+Two&display=swap'); 
+
+ @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cardo&family=Dancing+Script:wght@500&family=Klee+One:wght@600&family=Libre+Bodoni&family=Lobster+Two&family=Poppins:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+ 
+}
+:root {
+  --main-color: rgb(239, 255, 15);
+  --second-color: rgb(70, 11, 65);
+  --hover-bcolor: rgb(255, 255, 58);
+}
+.nav-link{
+  color: white !important;
+  font-size: 13px !important;
+  letter-spacing: 1px ;
+}
+.nav-link:hover{
+  color: rgb(236, 86, 31) !important;
+}
+
+.active{
+  color: rgb(236, 86, 31) !important;
+
+}

@@ -1,0 +1,25 @@
+
+.img-order{
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: none;
+    padding: 0;
+    border-radius: 2px;
+
+}
+.order-list-name{
+    font-size: 12px;
+    color: rgb(231, 228, 228);
+    letter-spacing: 1px;
+}
+.close-span-order{
+    width: 10px !important;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.span-num{
+    color: var(--main-color);
+}

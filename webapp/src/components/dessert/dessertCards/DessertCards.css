@@ -1,0 +1,122 @@
+.pizza-card {
+    background-color: rgba(48, 45, 45, 0.4) !important;
+ overflow: hidden;
+
+height: 100% !important;
+
+position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+.pizza-card:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+   
+    transform: translate(-50%,-50%);
+	bottom: 0;
+	width: 0px;
+	border-bottom: solid 2px white;
+}
+.pizza-card:hover:before{
+	animation: border_anim 6s linear forwards ;
+
+}
+@keyframes border_anim {
+	0%{
+		width: 0%;
+        border-bottom: solid 2px rgb(248, 49, 115);
+
+	}
+	100%{
+		width:100%;
+        border-bottom: solid 2px white;
+
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.handel-img{
+ 
+    width: 100% !important;
+    height:  200px !important;
+    overflow: hidden !important;
+
+ 
+}
+
+.img-hover {
+    height: 100% !important;
+    width: 100% !important;
+   
+    transition: 0.6s all ease-in-out;
+   
+}
+  
+.img-hover:hover {
+    
+    transform: scale(1.2);
+}
+.btn-card{
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 20px !important;
+    background-color: var(--main-color) !important;
+    color: var(--second-color) !important;
+
+ 
+}   
+.btn-card:hover{
+    background-color:var(--hover-bcolor) !important;
+    color: var(--second-color) !important;
+
+}
+.card-body{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+
+}
+.card-title{
+    letter-spacing:2px;
+}
+
+.dessert-text{
+    position: relative;
+    left: 0;
+    top: 100%;
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(48, 45, 45) !important;
+
+
+}
+.dessert-text-active{
+    position: relative;
+    left: 0;
+    /* top: -1.5px; */
+    top: -2px;
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(37, 36, 36) !important;
+   
+
+
+}

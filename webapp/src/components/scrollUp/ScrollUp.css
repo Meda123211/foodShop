@@ -1,0 +1,16 @@
+.scroll-up-btn{
+    position: absolute;
+width: 40px !important;
+   right: 0;
+   bottom: 5px;
+    background-color: var(--second-color)!important;
+    cursor: pointer;
+    z-index: 20; 
+    position: fixed;
+  
+
+}
+ .scroll-up-btn:hover{
+    background-color: rgb(94, 13, 87)!important;
+
+ }
