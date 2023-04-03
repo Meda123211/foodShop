@@ -1,7 +1,7 @@
 import './App.css';
 import { useRef } from 'react';
 import Navbar from './components/navbar/Navbar';
- import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
+ import {BrowserRouter as Router} from "react-router-dom"
 
 import Home from '../src/components/home/Home'
 
@@ -15,9 +15,10 @@ const App=()=> {
   const menu=useRef(null)
   const dessert=useRef(null)
   const contact=useRef(null)
-  const scrollUp=useRef(null)
+  const scrollUp=useRef(null) 
   const[scrollingLogic,SetscrollingLogic]=useState(false)
-
+  const[carts,Setcarts]=useState([])
+  const[orders,Setorders]=useState(false)
 
 
   window.onscroll =  (e)=> {
@@ -28,8 +29,7 @@ const App=()=> {
   }
   };
   
-  const[carts,Setcarts]=useState([])
-  const[orders,Setorders]=useState(false)
+
 
 function handleCarts(items){
   Setcarts([...carts,items])
@@ -51,6 +51,7 @@ function handleCarts(items){
     contact={contact} 
     carts={carts}
     setcarts={Setcarts}
+    home={scrollUp}
     />
     {scrollingLogic  && <ScrollUp  scrollUp={scrollUp}/>}
     <Home variable={scrollUp} />

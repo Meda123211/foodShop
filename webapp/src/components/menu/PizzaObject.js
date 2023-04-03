@@ -14,6 +14,7 @@ const PizzaObject=[
         name:'Cheese Pizza',
        price:10,
         infos:' Cheese pizza is one of the most popular choices. It will always be a simple, unadorned masterpiece on its own'
+
     },
     
     {
@@ -22,6 +23,7 @@ const PizzaObject=[
         name:'Veggie Pizza',
        price:12,
         infos:'  Everything from peppers and mushrooms,  and onions make for an exciting and tasty '
+
     },
     {
         id:3,
@@ -37,6 +39,8 @@ const PizzaObject=[
         name:'Meat Pizza',
        price:14,
        infos:'meat pizza is a perfect and popular choice. Pile on ground beef and sausage for a hearty meal'
+
+
     },
     
        { 
@@ -45,6 +49,8 @@ const PizzaObject=[
         name:'Margherita Pizza',
        price:10,
        infos:'Margherita pizza is made with basil, fresh mozzarella, and tomatoes'
+
+
     },
     
        { 
@@ -53,6 +59,8 @@ const PizzaObject=[
         name:'Hawaiian Pizza',
        price:12,
        infos:' it creates an unexpectedly solid sweet and salty combination for this type of pizza'
+       
+
     },
     
     

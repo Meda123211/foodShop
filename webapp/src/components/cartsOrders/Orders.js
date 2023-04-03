@@ -1,22 +1,40 @@
 import React from 'react'
 import './Orders.css'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 
-function Orders({carts,name,price,img ,removeItem }) {
-const[quantity,setQuantity]=useState(1)
+function Orders({carts,name,price,img ,removeItem}) {
 
-const inreaseQuantity=(item)=>{
+  const[quantity,setQuantity]=useState(1)
+  const [itemsCartsPrices,setItemCartsPrices]=useState(1)
+ 
+
+  function calcQuantityPrice(){
+  const res=price*quantity
+setItemCartsPrices(res)
+
+
+}
+
+  //increasing quantity of order
+const inreaseQuantity=()=>{
 
   setQuantity(quantity+1)
 
 }
+  //decreasing quantity of order
+
 const decreaseQuantity=()=>{
   if(quantity>1){
     setQuantity(quantity-1)
 
   }
 }
+
+useEffect(()=>{
+  calcQuantityPrice()
+})
+
 
   return (
    
@@ -31,7 +49,7 @@ const decreaseQuantity=()=>{
            <button onClick={inreaseQuantity} className='  fs-5  btn btn-sm text-light '>+</button> 
            </div>
          <div className=' w-25  d-flex  align-items-center justify-content-center'>
-         <span className='   span-num'>{price*quantity}$</span>    
+         <span className='   span-num'>{itemsCartsPrices}$</span>    
 
          </div>
  </section>
